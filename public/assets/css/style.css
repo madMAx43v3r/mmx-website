@@ -91,14 +91,12 @@ textarea {
   src: local('Samsung Sharp Sans Regular'), url('../fonts/samsungsharpsans.woff') format('woff');
 }
 
-
 @font-face {
   font-family: 'Samsung Sharp Sans';
   font-style: normal;
   font-weight: 500;
   src: local('Samsung Sharp Sans Medium'), url('../fonts/samsungsharpsans-medium.woff') format('woff');
 }
-
 
 @font-face {
   font-family: 'Samsung Sharp Sans';
@@ -122,13 +120,6 @@ body {
   background-size: cover;
 }
 
-@media (max-width: 575.98px) {
-  .brand img {
-    height: 50px;
-    width: auto;
-  }
-}
-
 .menu {
   list-style: none;
 }
@@ -141,14 +132,12 @@ body {
   margin: auto 0 auto 1rem;
 }
 
-
 .menu li a {
   text-decoration: none;
   font-size: 15px;
   font-weight: 200;
   color: #E9DCFF;
 }
-
 
 .hero-section:before {
   content: "";
@@ -165,6 +154,7 @@ body {
   animation-name: pulse;
   animation-duration: 4s;
   animation-iteration-count: infinite;
+  z-index: -1;
 }
 
 .hero-section:after {
@@ -183,9 +173,8 @@ body {
   animation-duration: 3s;
   animation-delay: 1s;
   animation-iteration-count: infinite;
+  z-index: -1;
 }
-
-
 
 @keyframes pulse {
   0% {
@@ -200,7 +189,6 @@ body {
     transform: scale(1) translate(0, 0);
   }
 }
-
 
 .main-title {
   font-family: "Samsung Sharp Sans";
@@ -318,7 +306,6 @@ body {
   }
 }
 
-
 .box-inner {
   padding: 20px 16px;
   border-radius: 20px;
@@ -420,6 +407,40 @@ body {
 .links .unit a.documentation::before {
   background-image: url('../imgs/icon-documentation.svg');
   background-size: 80% auto;
+}
+
+.links .unit a.x::before {
+  background-image: url('../imgs/icon-x.svg');
+  background-size: 70% auto;
+}
+
+@media (max-width: 575.98px) {
+  .brand img {
+    height: 50px;
+    width: auto;
+  }
+
+  .box-inner {
+    min-height: 200px;
+  }
+
+  .box-inner .description {
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  .box-inner .title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .box-inner .title.number {
+    font-size: 36px;
+  }
+
+  .box-inner .note {
+    font-size: 12px;
+  }
 }
 
 /* ==========================================================================
