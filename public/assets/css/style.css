@@ -25,12 +25,12 @@ html {
  */
 
 ::-moz-selection {
-  background: #b3d4fc;
+  background: #ff3333;
   text-shadow: none;
 }
 
 ::selection {
-  background: #b3d4fc;
+  background: #ff3333;
   text-shadow: none;
 }
 
@@ -337,7 +337,7 @@ body {
 
 .box-inner .description {
   padding-top: 4px;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 300;
   line-height: 18px;
   color: #E9DCFFDD;
@@ -360,7 +360,7 @@ body {
 }
 
 .box-inner .note {
-  font-size: 11px;
+  font-size: 15px;
   font-weight: 300;
   color: #C19DFFB2;
 }
