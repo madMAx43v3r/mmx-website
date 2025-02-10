@@ -105,6 +105,34 @@ textarea {
   src: local('Samsung Sharp Sans Bold'), url('../fonts/samsungsharpsans-bold.woff') format('woff');
 }
 
+::selection {
+  background-color: #352e7e;
+  color: #fff;
+}
+
+/*** Mozilla based browsers ***/
+::-moz-selection {
+  background-color: #352e7e;
+  color: #fff;
+}
+
+/***For Other Browsers ***/
+::-o-selection {
+  background-color: #352e7e;
+  color: #fff;
+}
+
+::-ms-selection {
+  background-color: #352e7e;
+  color: #fff;
+}
+
+/*** For Webkit ***/
+::-webkit-selection {
+  background-color: #352e7e;
+  color: #fff;
+}
+
 html,
 body {
   min-height: 100vh;
@@ -212,6 +240,12 @@ body {
   background: none;
   -webkit-background-clip: unset;
   -webkit-text-fill-color: #C3BEC4;
+}
+
+.main-title::selection {
+  /* background-color: transparent; */
+  color: white;
+  -webkit-text-fill-color: #FFFFFF;
 }
 
 .btn-custom {
@@ -344,6 +378,12 @@ body {
   min-height: 60px;
   padding-bottom: 2px;
   /* font is not calibrated in its height and in big sizes becomes out of its container */
+}
+
+.box-inner .title::selection {
+  /* background-color: transparent; */
+  color: white;
+  -webkit-text-fill-color: #FFFFFF;
 }
 
 .box-inner .title.number {
