@@ -452,6 +452,12 @@ body {
   background-size: 80% auto;
 }
 
+.links .unit a.safetrade::before {
+  background-image: url('../imgs/icon-safetrade.png');
+  background-size: 80% auto;
+  filter: grayscale(100%);
+}
+
 .links .unit a.x::before {
   background-image: url('../imgs/icon-x.svg');
   background-size: 70% auto;
