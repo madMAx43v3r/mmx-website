@@ -653,3 +653,26 @@ body {
     page-break-after: avoid;
   }
 }
+
+/* ==========================================================================
+   Custom: Removed blur if device prefers reduced transparency
+   ========================================================================== */
+
+@media (prefers-reduced-transparency: reduce) {
+  .box-backdrop {
+    backdrop-filter: none;
+  }
+
+  .links .unit a {
+    backdrop-filter: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  /*
+  .element {
+    animation: none;
+    transition: none;
+  }
+  */
+}
