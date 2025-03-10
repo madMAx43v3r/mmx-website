@@ -669,6 +669,14 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .box-backdrop {
+    backdrop-filter: none;
+  }
+
+  .links .unit a {
+    backdrop-filter: none;
+  }
+
   /*
   .element {
     animation: none;
