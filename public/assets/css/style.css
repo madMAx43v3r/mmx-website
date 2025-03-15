@@ -458,6 +458,11 @@ body {
   filter: grayscale(100%);
 }
 
+.links .unit a.nonkyc::before {
+  background-image: url('../imgs/icon-nonkyc.png');
+  background-size: 80% auto;
+}
+
 .links .unit a.x::before {
   background-image: url('../imgs/icon-x.svg');
   background-size: 70% auto;
